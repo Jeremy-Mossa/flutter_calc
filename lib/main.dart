@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'calculator_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Calc',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Flutter Calc')), // Cannot use keyword const here, error
-        body: const Center(
-          child: const Text('Hello, Flutter Calc!'),
-        ),
-      ),
+      home: const CalculatorPage(),
     );
   }
 }
