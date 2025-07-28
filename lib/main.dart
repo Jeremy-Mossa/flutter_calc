@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Calc',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
-        appBar: AppBar(title: const Text('Flutter Calc')),
+        appBar: AppBar(title: const Text('Flutter Calc')), // Cannot use keyword const here, error
         body: const Center(
-          child: const Text('Hello, Flutter Calc!'),  // Updated placeholder
+          child: const Text('Hello, Flutter Calc!'),
         ),
       ),
     );
